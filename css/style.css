@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+:root {
+    /* Colors Primary */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /* Colors Neutral */
+    --Dark-gray: hsl(0, 0%, 59%);
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--Dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position:  right 51vw bottom 20vh, left 45vw top 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.8rem;
+    font-weight: 400;
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    padding: 0 2.5rem;
+}
+.card {
+    background-color: white;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 14.2rem;
+    border-radius: .8rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 35.2rem;
+    min-height: 37.6rem;
+}
+.card picture img {
+    border: .5rem solid white;
+    border-radius: 50%;
+    margin-top: 8.6rem;
+    margin-bottom: 2.2rem;
+}
+.card .user__name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+.card .user__name span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+.user__city {
+    font-size: 1.4rem;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 2.6rem;
+}
+.card__footer {
+    border-top: 1px solid var(--Dark-gray);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 9rem;
+}
+.card__footer h2 {
+    font-size: 1.8rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+.card__footer h2 p {
+    color: var(--Dark-grayish-blue);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+/* -----------------Footer------------------ */
+.attribution { font-size: 11px; text-align: center; margin-top: 5rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (min-width: 90rem) {
+    body {
+        background-position:  right 51vw bottom 44vh, left 48vw top 50vh;
+    }
+}
